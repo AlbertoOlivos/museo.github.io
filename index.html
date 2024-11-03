@@ -1,0 +1,218 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>felxbox_01</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/wise001.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">¿Adiós al efectivo?</a>
+          <a href="#secc2">El impacto en la economía informal</a>
+          <a href="#secc3">Dependencia de proovedores de servicios financieros</a>
+          <a href="#secc4">Bibliografía</a>
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>¿Adiós al efectivo?</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>La importancia del efectivo y las consucuencias de que desaparezca</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>La desaparición del dinero en efectivo ha sido un tema de debate en las últimas décadas, especialmente en un mundo cada vez más digitalizado.
+Aunque la eliminación del efectivo puede ofrecer ciertos beneficios, como la reducción del crimen relacionado con el efectivo (Como robos) y una mayor facilidad para realizar transacciones, también conlleva una serie de consecuencias negativas que vamos a revisar a continuación.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    		<div class="imgs-secc-1">
+    			<!--contenedor con las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/dinero001.jpg" title="dinero001">
+	        		<img src="imagenes/dinero002.jpg" title="dinero002">
+    			</div>
+    			<!--contenedor los dos textos de las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--texto para imagen a la izquierda-->
+	        		<p>¿Realmente está el dinero en efectivo en riesgo?</p>
+	        		<!--texto para imagen a la derecha-->
+	        		<p>Cambiar el efectivo por medios digitales podría tener sus consecuencias</p>
+        		</div>
+        		<!--contenedor con las dos imagenes en su version mobile-->
+        		<div class="par-imgs-mobile">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<!--texto para la imagen-->
+	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	        		<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+	        		<!--texto para la imagen-->
+	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>El impacto en la economía informal</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Muchos negocios recurren al comercio informal y su principal medio de sustentación es el dinero en efectivo, por situaciones económicas es común que no se tenga la capacidad de agregar pagos electrónicos, provocando la desaparición de estos.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>No solamente esto, sino que ciertas poblaciones de bajos recursos no tienen acceso a los bancos por lo que se les imposibilitarían las transacciones y participar en la economía.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/wise002.png" title="wise002">
+        		<!--texto para la imagen-->
+        		<p>Cada vez es más común el cambio del efectivo a pagos electrónicos</p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Dependencia de proovedores de servicios financieros</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Siendo los pagos electrónicos las únicas opciones nos volvemos dependientes de los bancos. Esta dependencia puede llevar al monopolio en el sector financiero donde solo unos pocos pueden llevar control sobre la gran mayoría de transacciones.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>También hay que tener en cuenta la situación de seguridad, no hay sistema que esté libre de un ciber ataque y habiendo solamente dinero digital el riesgo de economía de un ciber ataque es todavía más peligroso de lo que es ahora.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/dinero003.jpg" title="dinero003">
+        		<!--texto para la imagen-->
+        		<p>Los pagos electrónicos son cada vez más comunes.</p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Bibliografía</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>● Sarah Keating. (26 de mayo del 2018). ¿Cuáles son los beneficios y los
+riesgos de acabar con el dinero en metálico?. BBC Recuperado de
+https://www.bbc.com/mundo/vert-cap-44118175
+
+● Vicente Nieves. (12 de Mayo del 2020). Dar muerte al dinero en efectivo de
+forma prematura generaría una 'avalancha' de riesgos para la sociedad. El
+Economista Recuperado de
+https://www.eleconomista.es/economia/noticias/10530212/05/20/Acabar-conel-
+dinero-en-efectivo-de-forma-prematura-generaria-una-avalancha-de-riesgo
+s-para-la-sociedad.html
+
+● Pelayo de las Heras. (24 de agosto del 2020). El fin del dinero en efectivo,
+¿un nuevo factor de desigualdad?. Ethic Recuperado de
+https://ethic.es/2020/08/el-fin-del-dinero-en-efectivo-un-nuevo-factor-de-desig
+ualdad/#:~:text=«La%20desaparición%20del%20dinero%20en%20efectivo%
+20afectaría%20sobre%20todo%20a,a%20sus%20condiciones%20de%20vid
+a.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>● Pixabay, 20 de Diciembre del 2016, recuperado de Pexels,
+https://www.pexels.com/es-es/foto/lote-de-monedas-de-color-cobre-259165/
+
+● energepic.com, 25 de Septiembre del 2019, recuperado de Pexels,
+https://www.pexels.com/es-es/foto/terminal-de-pago-negro-2988232/
+Pixabay, 12 de Mayo del 2020, recuperado de Pexels, https://www.pexels.com/es-es/foto/seguir-goma-caucho-rico-4386476/</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/dinero004.jpg" title="dinero004">
+        		<!--texto para la imagen-->
+        		<p>¿Tú que opinas? ¿Estamos ante un nuevo cambio?</p>
+    		</div>
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenes/twt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="http://instagram.com/">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">todos los derechos a sus respectivos autores</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
